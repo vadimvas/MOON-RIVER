@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* Кнопка бургер__________________________ */
+#bg-toggle{
+    display: none;
+    }
+    .burger__button{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: fixed;
+      top: 50px;
+      right: 50px;
+      cursor: pointer;
+      z-index: 4;
+    }
+    .line1,.line2,.line3{
+      width: 100%;
+      height: 3px;
+      background-color:#E2B67A;
+
+    }
+ 
+    #bg-toggle:checked ~ .burger__button .line1 {
+      transform:  translateY(23px) rotate(45deg) ;
+      transition-duration: 1s;
+    }
+    #bg-toggle:checked ~ .burger__button .line2 {
+      background-color: transparent;
+      transform: translateX(30px) ;
+      transition-duration: 1s;
+      transition-delay: 2s;
+    }
+    #bg-toggle:checked ~ .burger__button .line3 {
+      transform:  translateY(-24px) rotate(-45deg) ;
+      transition-duration: 1s;
+    }
+ 
+    @media (max-width:767px){
+      .burger__button{
+        top: 30px;
+        right: 30px;
+        height: 30px;
+      }
+      #bg-toggle:checked ~ .burger__button .line1 {
+        transform:  translateY(13px) rotate(-45deg);
+        transition-duration: 1s;
+      }
+      #bg-toggle:checked ~ .burger__button .line3 {
+        transform:  translateY(-13px) rotate(45deg);
+        transition-duration: 1s;
+      }
+    
+    }
+    
+    
+    
+    /* левая выезжающая панель __________________________________*/
+    
+    .nav__left{
+      width: 70%;
+      height: 100vh;
+      background-color: #272727;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      left:-70vw;
+     
+    }
+
+    /* ЛОГОТИП НАВИГАЦИОННОЙ ПАНЕЛИ___________ */
+    .nav__logo{
+      position: absolute;
+      top: 18px;
+      left: 50px;
+    }
+    .nav__logo img{
+      position: absolute;
+      top: 3px;
+      left: 50px;
+    }
+    
+     /* ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ  ___________*/
+    .nav__menu{
+      margin:  0 200px;
+    }
+    .nav__list {
+      list-style: none;
+      display: block;
+      margin-top: 190px ;
+    }
+    .nav__list li{
+      margin-top: 20px;
+    }
+    .nav__link {
+      text-decoration: none;
+      color: #FFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4vw;
+      font-style: normal;
+      font-weight: 450;
+      line-height: normal;
+      letter-spacing: 0.84px;
+      text-transform: uppercase;
+      
+    }
+    .nav__link:hover{
+      color: #E2B67A;
+    }
+    
+    
+    
+     
+    
+    /* НИЖНИЙ БЛОК НАВИГАЦИОННОЙ ПАНЕЛИ С ФОТО__________ */
+    @keyframes foto {
+      0% {
+        background-position: center top;
+        background-size: 100%;
+      }
+    
+      100% {
+        background-position: center top;
+        background-size: 200%;
+      }
+    }
+    .kiss__block{
+      color: #FFF;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 150px;
+      position: relative;
+      
+    }
+    .img-kiss{
+      margin-left: 20px;
+      width: 90%;
+      height: 25vh;
+      border: 2px solid white;
+      background: url(../img/s1.jpeg);
+      animation: foto 8s linear 0s infinite reverse forwards;
+    
+    }
+   
+    .kiss__block2 {
+      position: absolute;
+      top: 0;
+      left: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      height: 25vh;
+    }
+    .kiss__block2 .p{
+      align-self: flex-start;
+      margin: 5px;
+    }
+    .kiss__block2 .lin2{
+      align-self: flex-end;
+      margin: 10px;
+    }
+    .kiss-title {
+      color: #FFF;
+      font-family: Forum;
+      font-size: 3vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.44px;
+    }
+    .kiss__block2 .linya {
+      width: 40px;
+      height: 20px;
+     
+    }
+    .kiss__block2 a{
+      text-decoration: none;
+      color: #FFF;
+    }
+    
+    
+    /* правая выезжающая панель */
+    .nav__right{
+      width: 30%;
+      height: 100vh;
+      background-color: white;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      right:-30vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .nav__right p{
+      color: #272727;
+      font-family: Forum;
+      font-size: 3vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.92px;
+      padding-right: 20px;
+    
+    }
+    
+    #bg-toggle:checked ~ .nav__block .nav__left{
+      left: 0;
+      transition-duration: 1s;
+    }
+    #bg-toggle:checked ~ .nav__block .nav__right{
+      right: 0;
+      transition-duration: 1s;
+      transition-delay: 1s;
+    }
+    @media (max-width:767px) {
+      .nav__right,.kiss__block,.nav__logo{
+        display: none;
+      }
+      .nav__list{
+        display: block;
+      }
+      .nav__left{
+        width: 100%;
+        height: 100vh;
+        background-color: #272727;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left:-100vw;
+       
+      }
+      .nav__link {
+        text-decoration: none;
+        color: #FFF;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.84px;
+        text-transform: uppercase;
+        
+      }
+      .nav__menu{
+        margin:  0 20px;
+      }
+      .nav__list li{
+        margin-top: 70px;
+      }
+    }
+      
+     
+    
+ 
+   
+     
+      
+    
+    
+    
+    
+    
+    

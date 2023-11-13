@@ -1,0 +1,761 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+:root{
+  --color1:#EDEDED;
+  --color2:green;
+}
+.bg1{
+  background-color: var(--color1);
+}
+.bg2{
+  background-color: transparent;
+}
+.color1{
+  color: white;
+}
+
+
+/* Общий блок GRID */
+.wrapper{
+  width: 100%;
+  overflow: hidden;
+  margin-top: -25px;
+ 
+}
+
+
+/* ПЕРВЫЙ БЛОК____________________________________________________________ */
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  
+}
+
+/* ЛЕВАЯ ЧАСТЬ ПЕРВОГО БЛОКА_____________________ */
+.header__left {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+ 
+}
+video{
+  width: 70%;
+  height: 100vh;
+  object-fit: cover;
+  position:absolute ;
+  top: 0;
+  left: 0;
+}
+
+/* логотип в верхнем левом углу_____  */
+.header__logo{
+   position: absolute;
+   top:60px;
+   left: 40px;
+   z-index: 1;
+}
+.header__logo svg{
+  width: 258px;
+  height: 29px;
+}
+
+.vector{
+  position: absolute;
+  top: 3px;
+  left: 82px;
+  z-index: 1;
+}
+
+/* ЗАГОЛОВОК ГЛАВНОЙ СТРАНИЦЫ _______*/
+.header__title{
+  text-align: end;
+  text-decoration: none;
+  z-index: 1;
+}
+h1:hover {
+  color: #E2B67A;
+}
+
+.header__title .collection{
+  display: inline-block;
+  text-decoration: none;
+  color: #272727;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+/* линия под заголовком */
+.collection__line{
+  width: 15vw;
+  height: 1px;
+  background-color: #272727;
+}
+  
+  
+  
+h1{
+  color: #272727;
+  font-family: Forum;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.92px;
+  padding-right: 20px;
+  }
+  
+  /* вращающаяся картинка в header */
+  .header__image{
+    width: 10vw;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+  }
+  .header__image img{
+    width: 100%;
+    animation: rotatete 22s infinite linear ;
+    
+  }
+  @keyframes rotatete{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }
+
+
+
+/* заголовок под вращающейся картинкой */
+  .header__right .tifany{
+    width: 80%;
+    margin: 0 100px 150px 0;
+    text-align: end;
+    text-decoration: none;
+  }
+  .tifany .p1{
+    color: wheat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    font-family:"PT Sans";
+  }
+  .tifany .p2{
+    color: #C2C2C2;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-family:"PT Sans";
+  }
+  .tifany .p3{
+    color: #EFC58B;
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.54px;
+  
+  }
+    
+
+ 
+  .header__right {
+    width: 30%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    
+  }
+  /* иконки */
+  .header__menu{
+    width: 10vw;
+    text-align: center;
+    padding-top: 70px ;
+    margin-left: 22%;
+    
+  }
+  .header__menu .link-center{
+    margin:0 20%;
+  }
+  @media (max-width:1120px) {
+    .header__menu{
+      width: 17vw;
+      padding-top: 70px ;
+      margin-left: 5%;
+      
+    }
+    .header__menu .link-center{
+      margin:0 10%;
+    }
+      
+  }
+  @media (max-width:767px) {
+   
+    .header__menu{
+     display: none;
+   }
+   .header__right{
+    justify-content: flex-end;
+
+   
+   }
+   .header__logo{
+    position: absolute;
+    top:30px;
+    left: 20px;
+   }
+   .header__logo svg{
+     width: 129px;
+     height: 15px;
+   }
+ 
+   .vector{
+     display: none;
+   }
+   h1{
+    font-size: 25px;
+   }
+   .header__title{
+      margin-bottom: 15vh;
+   }
+  .header__title .collection{
+  font-size: 15px;
+ }
+  .header__image{
+  width: 12vh;
+  position: absolute;
+  top: -100%;
+  right: 23%;
+  }
+.header__right .tifany{
+  text-align: start;
+  width: 35vw;
+  position: absolute;
+  top: 70vh;
+  left: 50vw;
+
+
+}
+.tifany .p1{
+  color: rgb(211, 182, 129);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  font-family:"PT Sans";
+ 
+}
+.tifany .p2{
+  color: #a8a6a6;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family:"PT Sans";
+}
+.tifany .p3{
+  color: rgb(211, 182, 129);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.54px;
+
+}
+  
+ }
+ 
+      
+    
+      
+
+    
+
+
+
+
+
+
+
+
+/* ВТОРОЙ БЛОК ______________________________________________________________________*/
+
+/* раздел для мужчин */
+.man {
+ width: 50%;
+ height: 50vh;
+ float: left;
+ padding: 5px;
+}
+
+.man:hover .a2{
+  color: #272727;
+  font-weight: 700;
+}
+.man:hover .a1,.woman:hover .a1{
+  color:#EFC58B;
+  font-weight: 700;
+}
+.man:hover .line,.woman:hover .line{
+  background-color: #EFC58B;
+  font-weight: 700;
+}
+
+.man__foto{
+  width: 100%;
+  height: 100%;
+  background: url(../img/man.png) no-repeat 50%/cover ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* раздел для женщин */
+.woman{
+ width: 50%;
+ height: 50vh;
+ float: left;
+ padding: 5px;
+}
+.woman:hover .a2{
+  color: #ca7373;
+  font-weight: 700;
+}
+
+   
+.woman__foto{
+  width: 100%;
+  height: 100%;
+  background: url(../img/woman.png) no-repeat 50%/cover ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.a1{
+  text-decoration: none;
+  color: #FFF;
+  text-align: right;
+  font-family:"PT Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+}
+.a2{
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Forum;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.92px;
+
+}
+
+.line{
+  width: 130px;
+  height: 2px;
+  background-color:#FFF ;
+  margin-top: 20px;
+}
+@media (max-width:767px){
+  .man {
+    width: 100%;
+    height: 50vh;
+    padding: 5px;
+   }
+   .woman{
+    width: 100%;
+    height: 50vh;
+    padding: 5px;
+   }
+}
+
+
+
+
+
+/* ТРЕТИЙ БЛОК С КАРТОЧКАМИ ТОВАРОВ _____________________________________________________ */
+
+
+/* Карточки товаров для женщин*/
+.sell {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+.sell__block1 {
+  background-color: #EDEDED;
+  grid-column:1/2 ;
+  grid-row:1/2 ;
+  text-align: center;
+}
+
+
+
+
+.sell__block1 ,.sell__block2 ,.sell__block3 ,.sell__block4 {
+  text-decoration: none;
+  background-color: #EDEDED;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.sell__image{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  
+}
+.sell__image1{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.sell__block1 img,.sell__block2 img,.sell__block3 img,.sell__block4 img{
+  width: 100%; 
+}
+.sell__block2 {
+  background-color: #EDEDED;
+  grid-column:1/2 ;
+  grid-row:2/3 ;
+}
+  
+/* Центральная карточка  */
+.sell__bigblock {
+  grid-column:2/3 ;
+  grid-row:1/3 ;
+  position:relative;
+  text-decoration: none;
+}
+
+.slide{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.image-1{
+  height: 100vh;
+  object-fit: cover;
+  object-position: bottom;
+}
+h5{
+  color: #794f15;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
+.carousel-caption {
+  text-align: start;
+  margin-bottom: 50px;
+  margin-left:-50px;
+}
+ 
+
+
+.sell__block3 {
+  background-color: #EDEDED;
+  
+  grid-column:3/4 ;
+  grid-row:1/2 ;
+}
+.sell__block4 {
+  background-color: #EDEDED;
+  grid-column:3/4 ;
+  grid-row:2/3 ;
+}
+ 
+.sell .tifany,.slider .tifany{
+align-self: start;
+text-align: start;
+margin-left: 20px;
+}
+.sell .tifany .p1,.slider .tifany .p1{
+  color: #272727;
+  font-family:"PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+
+}
+.sell .tifany .p2,.slider .tifany .p2{
+  color: #757575;
+  font-family:"PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+}
+.sell .tifany .p3,.slider .tifany .p3{
+  color: #E2B67A;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+
+}
+@media (max-width:767px){
+  .sell {
+   display: none;
+  }
+  .sell__bigblock{
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  .sell__block1{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .sell__block2{
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .sell__block3{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .sell__block4{
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+
+
+}
+
+ 
+  
+  
+ 
+  
+/* БЛОК СЛАЙДЕР ________________________________________________________________________ */
+  
+
+.slider {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+
+h2{
+  color: white;
+  font-size: 30px;
+}
+@media (max-width:767px){
+  .slider{
+    display: none;
+  }
+}
+
+
+
+
+
+/* БЛОК С КАРТОЙ ____________________________________________________________________ */
+
+
+.foto{
+  width: 50%;
+  height: 70vh;
+  position: relative;
+  float: left;
+}
+
+.foto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.adres{
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 1;
+  text-align: end;
+}
+.adres img{
+  width: 100px;
+  padding-right: 20px;
+}
+.adres p{
+  font-family:" PT Sans";
+  font-size: 30px;
+  font-style: italic;
+  padding-right: 10px;
+}
+@media (max-width:767px){
+  .foto{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+/* КАРТА */
+
+
+.contact {
+ width: 50%;
+ height: 70vh;
+ float: left;
+}
+@media (max-width:767px){
+  .contact {
+    width: 100%;
+    height: 50vh;
+   
+   }
+}
+
+
+
+
+
+/* FOOTER _________________________________________________________________________________ */
+
+.footer {
+  background-color: #272727;
+  width: 100%;
+  height: 300px;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+.footer__menu{
+  width: 90%;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.footer__linl {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Futura PT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+.footer__linl:hover{
+  color: #E2B67A;
+}
+.footer__botom{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer__logo {
+  padding-top: 50px;
+}
+.centr__text img{
+  margin: 10px;
+}
+.centr__text p{
+  margin: 10px 0;
+}
+.right__text  form{
+  margin: 10px 0;
+ 
+}
+@media (max-width:767px){
+ .footer__menu{
+  display: none;
+ }
+ .footer__logo svg{
+  width: 40vw;
+ }
+ .footer__logo img{
+  display: none;
+ }
+ .centr__text,.right__text{
+  display: none;
+ }
+}
+
+  
+
+ 
+  
+ 
+  
+  
+  
+
+ 
+ 
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
