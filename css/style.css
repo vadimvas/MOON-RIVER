@@ -610,7 +610,9 @@ margin-left: 20px;
   
 /* БЛОК СЛАЙДЕР ________________________________________________________________________ */
   
-
+.mobile-slider{
+  display: none;
+}
 .slider {
   height: 100vh;
   display: grid;
@@ -628,6 +630,9 @@ h2{
 @media (max-width:767px){
   .slider{
     display: none;
+  }
+  .mobile-slider{
+    display: block;
   }
 }
 
@@ -771,7 +776,7 @@ h2{
  .footer__logo img{
   display: none;
  }
- .centr__text,.right__text{
+ .centr__text,.footer__logo{
   display: none;
  }
 }
