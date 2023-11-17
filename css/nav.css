@@ -105,13 +105,141 @@
       font-style: normal;
       font-weight: 450;
       line-height: normal;
-      letter-spacing: 0.84px;
+      
       text-transform: uppercase;
       
     }
-    .nav__link:hover{
-      color: #E2B67A;
-    }
+  
+    .l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12,.l13,.l14,.l15,.l16,.l17,.l18,.l19{
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      color: #FFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4vw;
+      font-style: normal;
+      font-weight: 450;
+      line-height: normal;
+      letter-spacing: 0.84px;
+      text-transform: uppercase;
+      
+  }
+  .nav__link:hover{
+    color: #E2B67A;
+  }
+  .nav__link:hover .l1{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+  }
+  .nav__link:hover .l2{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 50ms;
+  }
+  .nav__link:hover .l3{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+  }
+  .nav__link:hover .l4{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 150ms;
+  }
+  .nav__link:hover .l5{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 200ms;
+  }
+  .nav__link:hover .l6{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 250ms;
+  }
+  .nav__link:hover .l7{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 300ms;
+  }
+  .nav__link:hover .l8{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 350ms;
+  }
+  .nav__link:hover .l9{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 400ms;
+  }
+  .nav__link:hover .l10{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 450ms;
+  }
+  .nav__link:hover .l11{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 500ms;
+  }
+  .nav__link:hover .l12{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 550ms;
+  }
+  .nav__link:hover .l13{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 600ms;
+  }
+  .nav__link:hover .l14{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 650ms;
+  }
+  .nav__link:hover .l15{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 700ms;
+  }
+  .nav__link:hover .l16{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 750ms;
+  }
+  .nav__link:hover .l17{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 800ms;
+  }
+  .nav__link:hover .l18{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 850ms;
+  }
+  .nav__link:hover .l19{
+    color: #E2B67A;
+    transform: rotateY(-360deg);
+    transition-duration: 500ms;
+    transition-delay: 900ms;
+  }
     
     
     
