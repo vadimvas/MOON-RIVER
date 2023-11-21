@@ -219,7 +219,9 @@
                     <!-- линия под заголовком -->
                     <div class="collection__line"></div>
                 </a>
-                <div class="follow-cursor"></div> 
+                <div class="follow-cursor">
+                  <img src="img/goods/1473137 1.png" alt="">
+                </div> 
                 <!-- ___________________________________________________________ -->
 
 
@@ -776,6 +778,18 @@
     <script>
       $(document).ready(function () {
         $('.link-center').click(function () {
+          $(".like-my").toggle();
+           });
+        $('button').click(function () {
+          $(".like-my").hide();
+           });
+        $('.link1').click(function () {
+          $(".like-my").toggle();
+           });
+        $('button').click(function () {
+          $(".like-my").hide();
+           });
+        $('.link2').click(function () {
           $(".like-my").toggle();
            });
         $('button').click(function () {

@@ -87,6 +87,9 @@ video{
   pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
   transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
 }
+.follow-cursor img{
+  width: 50px;
+}
 
 /* Активный класс для кружка при наведении на ссылку */
 .follow-cursor_active {
