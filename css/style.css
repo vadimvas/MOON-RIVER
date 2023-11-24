@@ -800,18 +800,27 @@ h2{
   margin: 10px 0;
  
 }
-@media (max-width:767px){
-  .footer{
+@media (max-width:1138px){
+   .centr__text{
+    display: none;
+   }
+   .footer__list{
+    display: block;
+    
+   }
+   .footer__list li{
+    margin-top: 10px;
+   }
+ 
+   .footer{
     height: 500px;
   }
+}
 
- .footer__logo svg{
-  width: 40vw;
- }
- .footer__logo img{
-  display: none;
- }
- .centr__text,.footer__logo{
+@media (max-width:767px){
+ 
+
+ .footer__logo{
   display: none;
  }
  .footer__list{
