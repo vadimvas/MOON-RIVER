@@ -1,8 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+
 /* Кнопка бургер__________________________ */
 #bg-toggle{
     display: none;
@@ -99,14 +95,7 @@
     }
     .nav__link {
       text-decoration: none;
-      color: #FFF;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 450;
-      line-height: normal;
-      
-      text-transform: uppercase;
+    
       
     }
   
@@ -116,7 +105,7 @@
       text-decoration: none;
       color: #FFF;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 450;
       line-height: normal;

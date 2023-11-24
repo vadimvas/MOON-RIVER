@@ -89,6 +89,7 @@ video{
 }
 .follow-cursor img{
   width: 50px;
+  
 }
 
 /* Активный класс для кружка при наведении на ссылку */
@@ -260,7 +261,7 @@ h1{
     border: 0;
     font-weight: 500;
   }
-  button{
+  .button1,.button2,.button3{
     background-color: #e2b77a8a;
     margin-left: 80%;
   }
