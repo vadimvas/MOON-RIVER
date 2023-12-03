@@ -32,6 +32,39 @@
   
 }
 
+/* SNOW */
+
+.snow{
+  --animation-name: snowfall;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.snow__flake{
+  position: relative;
+  top: -1.5em;
+  color: #E2B67A;
+  animation-name: var(--animation-name);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform;
+  
+}
+@keyframes snowfall{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(101vh);
+  }
+}
+
 /* ЛЕВАЯ ЧАСТЬ ПЕРВОГО БЛОКА_____________________ */
 .header__left {
   width: 70%;
@@ -823,6 +856,13 @@ h2{
   display: block;
  }
 }
+
+
+
+
+
+
+
 
   
 
